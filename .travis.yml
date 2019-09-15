@@ -7,8 +7,8 @@ before_install:
 - pip install --user cpp-coveralls
 
 addons:
-sonarcloud:
-organization: alexandrtel
+  sonarcloud:
+    organization: alexandrtel
 
 script:
 - qmake
