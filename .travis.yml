@@ -18,12 +18,6 @@ after_success:
 - coveralls —root . -E ".*external.*" -E ".*tests.*"
 - build-wrapper-linux-x86-64 —out-dir bw-output make all
 - sonar-scanner
-  -Dsonar.projectKey=AlexandrTel_Lab.1 \
-  -Dsonar.organization=alexandrtel \
-  -Dsonar.sources=. \
-  -Dsonar.cfamily.build-wrapper-output=bw-output \
-  -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=851972bd407afa2663c7c8fc02703a5296fbad53
 
 cache:
 directories:
